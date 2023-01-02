@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+	<head>
+		<title>نقشه مدرسه سرداران</title>
+		<link rel="icon" type="image/png" href="contents/imgs/logo.svg"/>
+		<meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="contents/css/schoolslider.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body style="direction: rtl;">
+        <header class="header">
+            <a href="main.html"><img src="contents/imgs/logo.svg" alt="Sardaran Logo" class="logo"></a>
+            <div class="header-right">
+                <a href="main.html" class="nav-hover">صفحه اصلی</a>
+                <a href="#" class="nav-hover">پست ها</a>
+                <a href="schoolslider.html" class="active">نقشه مدرسه</a>
+                <a href="aboutme.html" class="nav-hover">درباره ما</a>
+            </div>
+        </header>
+		
+		<div>
+			<div class="info" id="btn-info" onclick="slide('iS');">
+				<p>هنرستان شهید سرداران </p>
+				<sub>کلیک کنید تا بروید</sub>
+			</div>
+			<div class="shahidhashemi" id="bg1"></div>
+			<div class="insideschool" id="bg2">
+				<div class="back" id="btn-back" onclick="slide('back1');">
+					<p>خارج از مدرسه</p>
+					<sub>کلیک کنید تا بروید</sub>
+				</div>
+			</div>
+		</div>
+	</body>
+
+
+
+</html>
+
+<script>
+	const delay = millis => new Promise((resolve, reject) => {
+	setTimeout(_ => resolve(), millis)
+	});
+	const slide = async function(arg) {
+		if (arg == 'iS'){
+			btn = document.getElementById('btn-info');
+			bg = document.getElementById('bg1');
+			bg2 = document.getElementById('bg2');
+			btn.style.animation = "fadeut 0.5s cubic-bezier(0,.83,.83,1) forwards";
+			await delay(1000);
+			bg.style.animation = "zoomIn 0.3s linear forwards";
+			btn.style.display = "none";
+			await delay(1000);
+			bg2.style.animation = "fadeIn 0.5s ease forwards";
+			document.getElementById('btn-back').style.animation = "none";
+		}
+		else if (arg == 'back1'){
+			btn = document.getElementById('btn-back');
+			bg = document.getElementById('bg2');
+			bg2 = document.getElementById('bg1');
+			btn.style.animation = "fadeoutexit 0.5s cubic-bezier(0,.83,.83,1) forwards";
+			await delay(1000);
+			bg.style.opacity = "1";
+			bg.style.animation = "zoomOut 0.3s linear forwards";
+			await delay(1000);
+			bg2.style.animation = "fadeIn 0.5s ease forwards";
+			document.getElementById('btn-info').style.display = "block";
+			document.getElementById('btn-info').style.animation = "fadeIn";
+		}
+	}
+
+	function navClick(arg){
+		for (let i = 1; i <= 4; i++){
+			document.getElementById('lnk'+i).classList.remove('active');
+		}
+		document.getElementById(arg).classList.add('active');
+	}
+</script>

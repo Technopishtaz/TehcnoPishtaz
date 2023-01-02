@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+    <head>
+        <title>مدرسه سرداران</title>
+        <link rel="icon" type="image/png" href="contents/imgs/logo.svg"/>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="contents/css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="user-scalable=no" />
+        <script src="lib/jquery.js"></script>
+    </head>
+    <body style="direction: rtl;">
+
+        <header class="header">
+            <a href="main.html"><img src="contents/imgs/logo.svg" alt="Sardaran Logo" class="logo"></a>
+            <div class="header-right">
+                <a href="main.html" class="active">صفحه اصلی</a>
+                <a href="#" class="nav-hover">پست ها</a>
+                <a href="schoolslider.html" class="nav-hover">نقشه مدرسه</a>
+                <a href="aboutme.html" class="nav-hover">درباره ما</a>
+            </div>
+        </header>
+        
+        <div class="slideShow">
+            <div class="main-div">
+                <div class="explore-div">
+                    <h1>مدرسه شهید سرداران</h1>
+                    <h4>هنرستان فنی حرفه ای محمد اباد گلستان</h4>
+                    <a href="schoolslider.html"><button class="btn-explore">بازدید از مدرسه</button></a>
+                </div>
+            </div>
+            <div class="main-div">
+                <div class="explore-div">
+                    <h1>اخرین خبرها</h1>
+                    <h4>وبلاگ هنرستان</h4>
+                    <a href="#"><button class="btn-explore">پست ها</button></a>
+                </div>
+            </div>
+            <div class="main-div">
+                <div class="explore-div">
+                    <h1>مکان هنرستان</h1>
+                    <h4>آدرس محل هنرستان سرداران</h4>
+                    <a href="aboutme.html"><button class="btn-explore">موقعیت جغرافیایی</button></a>
+                </div>
+            </div>
+            <div class="main-div">
+                <div class="explore-div">
+                    <h1>تاریخچه</h1>
+                    <h4>گزشته هنرستان و درباره آن</h4>
+                    <a href="aboutme.html"><button class="btn-explore">گزشته هنرستان</button></a>
+                </div>
+            </div>
+            <div class="slide-buttons">
+                <div class="lines">
+                    <span class="line" onclick="clickSlide(0); clearInter();"></span> 
+                    <span class="line" onclick="clickSlide(1); clearInter();"></span> 
+                    <span class="line" onclick="clickSlide(2); clearInter();"></span> 
+                    <span class="line" onclick="clickSlide(3); clearInter();"></span> 
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="gradiantOverImg"></div>
+            <img src="contents/imgs/background.png" alt="background" class="aboutusImg">
+            <img src="contents/imgs/pa.jpg" alt="background" class="aboutusImg">
+            <img src="contents/imgs/download.jpg" alt="background" class="aboutusImg">
+            <img src="contents/imgs/aboutus.jpg" alt="background" class="aboutusImg">
+        </div>
+
+
+        <button id="scrollTopBtn" onclick="topFunction();"><img src="contents/imgs/Arrow_top.png" alt="arrow top" class="arrowTop"></button>
+
+
+        <main class="main">
+            <h1 id="lastest-post">پست ها</h1>
+            <section class="section">
+                <article class="box">
+                    <a href="#"><img src="contents/imgs/blog1.jpg" alt="ریاضی" class="post-img"></a>
+                    <div class="overlay"></div>
+                    <a href="#"><h2 class="underline">مصاحبه از دانش اموزان مکانیک درباره دروس ریاضی</h2></a>
+                    <p class="texts">دانش اموزان پاسخ دادن: امتحان خیلی راحت بود و سوالات کم</p>
+                    <div class="by-date">
+                        <span class="by">مدیر</span>
+                        <span class="date">  –  12/18/2022</span>
+                        <span class="views"><img src="contents/imgs/view.svg" alt="view icon">15</span>
+                    </div>
+                </article>
+                <article class="box">
+                    <a href="#"><img src="contents/imgs/blog2.jpg" alt="رخداد غم انگیز" class="post-img"></a>
+                    <div class="overlay"></div>
+                    <a href="#"><h2 class="underline">رخداد غم انگیز بچه های پشت مدرسه</h2></a>
+                    <p class="texts">چندین نفر از دانش اموزان در حیاط پشت مدرسه شهید شدن بخاطر خردن ساندویچ بوفه مدرسه</p>
+                    <div class="by-date">
+                        <span class="by">مدیر</span>
+                        <span class="date">  –  8/23/2022</span>
+                        <span class="views"><img src="contents/imgs/view.svg" alt="view icon">160</span>
+                    </div>
+                </article>
+                <article class="box">
+                    <a href="#"><img src="contents/imgs/blog3.jpg" alt="مردودی های درس ریاضی" class="post-img"></a>
+                    <div class="overlay"></div>
+                    <a href="#"><h2 class="underline">مردودی های درس ریاضی مکانیک</h2></a>
+                    <p class="texts">تمام دانش اموزان مکانیک مردود شده و پودمان هارا افتاده</p>
+                    <div class="by-date">
+                        <span class="by">مدیر</span>
+                        <span class="date">  –  3/10/2021</span>
+                        <span class="views"><img src="contents/imgs/view.svg" alt="view icon">69</span>
+                    </div>
+                </article>
+            </section>
+            <a href="#" class="read-more underline">بیشتر...</a>
+        </main>
+
+
+        <footer class="footer bottom-main">
+            <div class="column">
+                <h4>درباره هنرستان</h4><div class="hr"></div>
+                <ul>
+                    <p>هنرستان خوبیه</p>
+                </ul>            
+            </div>
+            <div class="column">
+                <h4>ارتباط با ما</h4><div class="hr"></div>
+                <ul>
+                    <p>تلگرام: admin_tel@</p>
+                    <p>اینستاگرام: admin_insta@ </p>
+                </ul>
+            </div>
+            <div class="column">
+                <h4>دسترسی سریع</h4><div class="hr"></div>
+                <ul>
+                    <p><a href="main.html" class="underline">صفحه اصلی</a></p>
+                    <p><a href="#" class="underline">خبر ها</a></p>
+                    <p><a href="schoolslider.html" class="underline">نقشه مدرسه</a></p>
+                    <p><a href="aboutme.html" class="underline">درباره ما</a></p>
+                </ul>
+            </div>
+        </footer>
+        <div class="footer-copyright bottom-main">
+            <p class="copyright">© 2022 TechnoPishtaz, Sardaran. All rights reserved.</p>
+        </div>
+
+    </body>
+</html>
+
+<script src="contents/js/javascript.js"></script>
+<script>
+    for (var i = 0; i <= 2; i++) {
+        var colors = ['#5BC1D7', '#493694', '#D6EFF5', '#8F7BE1', '#D9D3F5', '#84D0E1'];
+        var random_color = colors[Math.floor(Math.random() * colors.length)];
+        var div = document.getElementsByClassName("overlay")[i].style.background = "linear-gradient(45deg,#2D2D2D,"+random_color+")";
+    }
+    var paragraph = document.getElementsByClassName("texts");
+    for(var i=0;i<paragraph.length;i++){
+        var string = document.getElementsByClassName("texts")[i].innerHTML;
+        if(string.length>80){
+            var string = string.substring(0, 80)+"...";
+        }
+        document.getElementsByClassName("texts")[i].innerHTML = string;
+    }
+
+
+    let numSlide = 0;
+    let slideText = document.getElementsByClassName('main-div');
+    let slide = document.getElementsByClassName('aboutusImg');
+    let line = document.getElementsByClassName("line");
+
+
+    function nextSlide(n) {
+        Slide(numSlide += n);
+        if (n == 1) {
+            slide[numSlide].style.animation = "nextSlide 0.5s ease forwards";
+            slideText[numSlide].style.animation = "nextSlideText 0.5s ease forwards";
+        }
+        else {
+            slide[numSlide].style.animation = "prevSlide 0.5s ease forwards";
+            slideText[numSlide].style.animation = "prevSlideText 0.5s ease forwards";
+        }
+    }
+    function clickSlide(n) {
+        Slide(numSlide = n);
+        slide[numSlide].style.animation = "opacityOut 1s forwards";
+        slideText[numSlide].style.animation = "none";
+    }
+    function Slide(num) {
+        let i;
+        if (num > slide.length - 1) {
+            numSlide = 0;
+        }
+        else if (num < 0) {
+            numSlide = slide.length - 1;
+        }
+        for (i = 0; i < slide.length; i++) {
+            slide[i].style.display = "none";
+            slideText[i].style.display = "none";
+        }
+        for (i = 0; i < line.length; i++) {
+            line[i].className = line[i].className.replace(" actL", "");
+        }
+        slide[numSlide].style.display = "block";
+        slideText[numSlide].style.display = "flex";
+        line[numSlide].className += " actL";
+    }
+
+    nextSlide(0);
+
+    for (let i=0; i < slide.length; i++){
+        slide[i].style.animation = "none";
+        slideText[i].style.animation = "none";
+    }
+    
+    var automaticSlider=setInterval("clickSlide(numSlide+1)",4000);
+    
+    function clearInter() {
+        clearInterval(automaticSlider);
+    }
+
+    for (var i = 0; i <= document.getElementsByClassName("box-about").length - 1; i++) {
+        var colors = ['#5BC1D7', '#493694', '#D6EFF5', '#8F7BE1', '#D9D3F5', '#84D0E1'];
+        var random_color = colors[Math.floor(Math.random() * colors.length)];
+        var div = document.getElementsByClassName("overlay-about")[i].style.background = "linear-gradient(45deg,var(--darker-color-1),"+random_color+")";
+    }
+</script>

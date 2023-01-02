@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+    <head>
+        <title>درباره هنرستان سرداران</title>
+        <link rel="icon" type="image/png" href="contents/imgs/logo.svg"/>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="contents/css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="user-scalable=no" />
+        <script src="lib/jquery.js"></script>
+    </head>
+    <body style="direction: rtl;">
+
+        <header class="header">
+            <a href="main.html"><img src="contents/imgs/logo.svg" alt="Sardaran Logo" class="logo"></a>
+            <div class="header-right">
+                <a href="main.html" class="nav-hover">صفحه اصلی</a>
+                <a href="#" class="nav-hover">پست ها</a>
+                <a href="schoolslider.html" class="nav-hover">نقشه مدرسه</a>
+                <a href="aboutme.html" class="active">درباره ما</a>
+            </div>
+        </header>
+
+        <div class="slideShow">
+            <div class="aboutUs-div">
+                <h1>درباره هنرستان</h1>
+                <h4>سال تاسیس و تاریخچه</h4>
+                <button class="btn-aboutUs" onclick="goBot(500);">درباره هنرستان</button>
+            </div>
+            <div class="aboutUs-div">
+                <h1>فضا ها و امکانات</h1>
+                <h4>ساختمان داخلی و حیاط هنرستان</h4>
+                <button class="btn-aboutUs" onclick="goBot(1000);">کارگاه ها</button>
+            </div>
+            <div class="aboutUs-div">
+                <h1>اهداف و برنامه ها</h1>
+                <h4>كمال‌ انسان‌ درنظام‌ تعليم‌ وتربيت‌ اسلامي‌ رسيدن‌ به‌ قرب‌ الهي‌ است‌</h4>
+                <button class="btn-aboutUs" onclick="goBot(1500);">هدف ها</button>
+            </div>
+            <div class="aboutUs-div">
+                <h1>مدیر و ناظمان</h1>
+                <h4>پنج ناظم اصلی هنرستان</h4>
+                <button class="btn-aboutUs" onclick="goBot(2000);">درباره همکاران</button>
+            </div>
+            <div class="slide-buttons">
+                <div class="prev" onclick="nextSlide(1)"><a>❮</a></div>
+                <div class="dots">
+                    <span class="dot" onclick="clickSlide(0)"></span> 
+                    <span class="dot" onclick="clickSlide(1)"></span> 
+                    <span class="dot" onclick="clickSlide(2)"></span> 
+                    <span class="dot" onclick="clickSlide(3)"></span> 
+                </div>
+                <div class="next" onclick="nextSlide(-1)"><a>❯</a></div>
+            </div>
+        </div>
+        <div>
+            <div class="gradiantOverImg"></div>
+            <img src="contents/imgs/blog3.jpg" alt="background" class="aboutusImg">
+            <img src="contents/imgs/pa.jpg" alt="background" class="aboutusImg">
+            <img src="contents/imgs/download.jpg" alt="background" class="aboutusImg">
+            <img src="contents/imgs/aboutus.jpg" alt="background" class="aboutusImg">
+        </div>
+
+        <button id="scrollTopBtn" onclick="topFunction();"><img src="contents/imgs/Arrow_top.png" alt="arrow top" class="arrowTop"></button>
+
+        <main class="main-about">
+            <section class="section-about">
+
+                <article class="box-about">
+                    <img src="contents/imgs/download.jpg" alt="درباره هنرستان" class="about-img">
+                    <div class="overlay-about"></div>
+                    <div class="texts-about">
+                        <h1 class="title-about">درباره هنرستان</h1>
+                        <h2>تاریخچه</h2>
+                        <p class="texts">از سال 1387 اقای دهقان مدیریت این واحد را به عهده گرفته است, که تا کنون توانسته اند با اتکال به خداوند متعال از افراد خیر خارج مدرسه و پدران و مادران دلسوز
+                            و همراه, این واحد آموزشی را این چنین از نظر کیفی و کمی ارتقا بخشند.</p>
+                    </div>
+                </article>
+
+                <article class="box-about">
+                    <img src="contents/imgs/pa.jpg" alt="درباره هنرستان" class="about-img">
+                    <div class="overlay-about"></div>
+                    <div class="texts-about">
+                        <h1 class="title-about">فضا ها و امکانات</h1>
+                        <h2>ساختمان هنرستان</h2>
+                        <p class="texts">ساختمان دو طبقه است و طبقه اول شامل اتاق دبیران, دفتر مدیر, دفتر معاون اموزشی, دو کلاس, کارگاه برق, مکانیک و میز پینگ پونگ
+                            <br>طبقه دوم شامل نماز خانه, چهار کلاس و دو کارگاه کامپیوتر<br>کل مساحت هنرستان 1000 متر مربع با زمین فوتبال, والیبال و بسکتبال</p>
+                    </div>
+                </article>
+
+                <article class="box-about">
+                    <img src="contents/imgs/aboutus.jpg" alt="درباره هنرستان" class="about-img">
+                    <div class="overlay-about"></div>
+                    <div class="texts-about">
+                        <h1 class="title-about">اهداف و برنامه ها</h1>
+                        <h2>در حیطه دانش آموزی</h2>
+                        <p class="texts">ارتقاء سطح علمی و مهارتی دانش آموزان و هنرجویان. ارتقاء توان مهارتی و توسعه فرهنگ تولید و صنعت. آماده سازی هنرجویان جهت ورود به سطوح آموزش عالی</p>
+                    </div>
+                </article>
+
+                <article class="box-about">
+                    <img src="contents/imgs/background.png" alt="درباره هنرستان" class="about-img">
+                    <div class="overlay-about"></div>
+                    <div class="texts-about">
+                        <h1 class="title-about">ادرس هنرستان</h1>
+                        <h2>هنرستان سرداران شهید محمدآباد</h2>
+                        <p class="texts">هنرستان سرداران شهید محمدآباد در گرگان و در کمربندی گرگان واقع شده است.<br>از لحاظ موقعیت جغرافیایی این مکان در نزدیکی مراکزی مانند اتا الکتریک و شرکت نقشه برداری تراز مبنا قرار گرفته است.</p>
+                    </div>
+                </article>
+
+            </section>
+        </main>
+
+        <footer class="footer bottom-about">
+            <div class="column">
+                <h4>درباره هنرستان</h4><div class="hr"></div>
+                <ul>
+                    <p>هنرستان خوبیه</p>
+                </ul>            
+            </div>
+            <div class="column">
+                <h4>ارتباط با ما</h4><div class="hr"></div>
+                <ul>
+                    <p>تلگرام: admin_tel@</p>
+                    <p>اینستاگرام: admin_insta@ </p>
+                </ul>
+            </div>
+            <div class="column">
+                <h4>دسترسی سریع</h4><div class="hr"></div>
+                <ul>
+                    <p><a href="main.html" class="underline">صفحه اصلی</a></p>
+                    <p><a href="#" class="underline">خبر ها</a></p>
+                    <p><a href="schoolslider.html" class="underline">نقشه مدرسه</a></p>
+                    <p><a href="#" class="underline">درباره ما</a></p>
+                </ul>
+            </div>
+        </footer>
+        <div class="footer-copyright bottom-about">
+            <p class="copyright">© 2022 TechnoPishtaz, Sardaran. All rights reserved.</p>
+        </div>
+
+    </body>
+</html>
+<script src="contents/js/javascript.js"></script>
+<script>
+    let numSlide = 0;
+    let slideText = document.getElementsByClassName('aboutUs-div');
+    let slide = document.getElementsByClassName('aboutusImg');
+    let line = document.getElementsByClassName("dot");
+
+
+    function nextSlide(n) {
+        Slide(numSlide += n);
+        if (n == 1) {
+            slide[numSlide].style.animation = "nextSlide 0.5s ease forwards";
+            slideText[numSlide].style.animation = "nextSlideText 0.5s ease forwards";
+        }
+        else {
+            slide[numSlide].style.animation = "prevSlide 0.5s ease forwards";
+            slideText[numSlide].style.animation = "prevSlideText 0.5s ease forwards";
+        }
+    }
+    function clickSlide(n) {
+        Slide(numSlide = n);
+        slide[numSlide].style.animation = "none";
+        slideText[numSlide].style.animation = "none";
+    }
+    function Slide(num) {
+        let i;
+        if (num > slide.length - 1) {
+            numSlide = 0;
+        }
+        else if (num < 0) {
+            numSlide = slide.length - 1;
+        }
+        for (i = 0; i < slide.length; i++) {
+            slide[i].style.display = "none";
+            slideText[i].style.display = "none";
+        }
+        for (i = 0; i < line.length; i++) {
+            line[i].className = line[i].className.replace(" act", "");
+        }
+        slide[numSlide].style.display = "block";
+        slideText[numSlide].style.display = "flex";
+        line[numSlide].className += " act";
+    }
+
+    nextSlide(0);
+
+    for (let i=0; i < slide.length; i++){
+        slide[i].style.animation = "none";
+        slideText[i].style.animation = "none";
+    }
+    
+
+    for (var i = 0; i <= document.getElementsByClassName("box-about").length - 1; i++) {
+        var colors = ['#5BC1D7', '#493694', '#D6EFF5', '#8F7BE1', '#D9D3F5', '#84D0E1'];
+        var random_color = colors[Math.floor(Math.random() * colors.length)];
+        var div = document.getElementsByClassName("overlay-about")[i].style.background = "linear-gradient(45deg,var(--darker-color-1),"+random_color+")";
+    }
+</script>

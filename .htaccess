@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^adminsardaran1236987shahid?$ login.php
